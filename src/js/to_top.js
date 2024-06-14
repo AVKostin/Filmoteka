@@ -44,3 +44,8 @@ function scrollTo(to, duration = 700) {
     };
   animateScroll();
 }
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  const currentYear = new Date().getFullYear();
+  document.getElementById('currentYear').textContent = currentYear;
+});
